@@ -6,13 +6,16 @@
 }
 
 /* General style */
+
 body {
     background-color: var(--almostWhite);
     font-family: 'Epilogue', sans-serif;
+    width: 100%;
+    margin: 0;
 }
 
 .index-header {
-    display: flex;
+    width: 100%;
 }
 
 .index-nav {
@@ -23,6 +26,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
 }
 
 .nav-list {
@@ -32,6 +37,8 @@ body {
 
 .collapsible-content {
     display: flex;
+    width: 100%;
+    max-height: 0;
 }
 
 .logo {
@@ -39,7 +46,7 @@ body {
 }
 
 .main-content {
-    width: auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -51,7 +58,6 @@ body {
 .index-description {
     font-weight: 500;
     color: var(--mediumGray);
-    width: 60% auto;  
 }
 
 .learn-more {
@@ -68,6 +74,8 @@ body {
 .clients {
     text-align: center;
     padding-bottom: 10%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Mobile devices */
@@ -77,7 +85,6 @@ body {
         background-repeat: no-repeat;
         background-position: 1rem;
         width: 20%;
-        text-align: middle;
         border-style: none;
         background-color: var(--almostWhite);
     }
@@ -88,7 +95,8 @@ body {
     }
 
     .intro {
-        width: auto;
+        width: 100%;
+        box-sizing: border-box;
         text-align: center;
         padding: 10% 5%;
     }
@@ -99,12 +107,18 @@ body {
     }
     
     .index-description {
-        width: 60% auto;  
+        width: 85%;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        line-height: 1.5;
     }
     
     .clients > img {
         width: 20%;
     }
     
+    picture > img {
+        width: 100%;
+    }
 }
 

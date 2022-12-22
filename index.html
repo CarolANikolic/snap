@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="snap, work-remote, organize work platform">
     <meta name="description" content="Sync your team to work remotely with Snap">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
     <title>Snap</title>
 </head>
 <body>
+
+    <!-- Begining of the header content -->
     <header class="index-header">
         <nav class="index-nav">
             
@@ -52,11 +56,20 @@
             </div>
         </nav>
     </header>
+    <!-- End of header content -->
 
+    <!-- Main contents -->
     <main class="main-content">
 
-        <div class="hero-img"></div>
+        <!-- Art direction sources for hero image -->
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/image-hero-mobile.png"/>
+            <source media="(min-width: 769px)" srcset="assets/images/image-hero-desktop.png"/>
 
+            <img src="assets/images/image-hero-desktop.png" alt="man holding a computer"/>
+        </picture>       
+
+        <!-- Main text content -->
         <div class="intro">
             <h1 class="index-title">Make remote work</h1>
             <p class="index-description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
@@ -65,7 +78,9 @@
         <button class="learn-more" type="button">Learn more</button>
 
     </main>
+    <!-- End of the main content -->
 
+    <!-- Clients section -->
     <section class="clients">
 
         <img src="assets/images/client-databiz.svg" alt="databiz client logo">
@@ -74,5 +89,6 @@
         <img src="assets/images/client-maker.svg" alt="maker client logo">
 
     </section> 
+    <script src="script.js"></script>
 </body>
 </html>

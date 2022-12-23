@@ -26,8 +26,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 3%;
     box-sizing: border-box;
+    padding: 8%;
 }
 
 .nav-list {
@@ -39,10 +39,6 @@ body {
     display: flex;
     width: 100%;
     max-height: 0;
-}
-
-.logo {
-    padding: 5%;
 }
 
 .main-content {
@@ -63,7 +59,7 @@ body {
 .learn-more {
     background-color: var(--almostBlack);
     color: var(--almostWhite);
-    padding: 5%;
+    padding: 3%;
     border-radius: 10px;
     border-style: none;
     font-weight: 700;
@@ -110,7 +106,7 @@ body {
         width: 85%;
         margin: 0 auto;
         font-size: 0.8rem;
-        line-height: 1.5;
+        line-height: 2;
     }
     
     .clients > img {
@@ -122,3 +118,53 @@ body {
     }
 }
 
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 760px) {
+    .logo {
+        padding: 5%;
+        width: 20%;
+    }
+
+    .menu-btn {
+        background-image: url('../images/icon-menu.svg');
+        background-repeat: no-repeat;
+        background-position: 4rem;
+        width: 20%;
+        border-style: none;
+        background-color: var(--almostWhite);  
+    }
+
+    .collapsible-content {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .intro {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10% 5%;
+    }
+    
+    .index-title {
+        font-weight: 700;
+        padding-bottom: 5%;
+        font-size: 1.5rem;
+    }
+    
+    .index-description {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    
+    .clients > img {
+        width: 15%;
+        padding: 2%;
+    }
+    
+    picture > img {
+        width: 100%;
+    }
+}

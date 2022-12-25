@@ -68,6 +68,8 @@ body {
 
 .content {
     visibility: hidden;
+    max-height: 0 ;
+    overflow: hidden;
 }
 
 .main-content {
@@ -139,19 +141,16 @@ body {
     }
    
     
-.collapsible {
-    background-image: url('../images/icon-arrow-down.svg');
-    background-repeat: no-repeat;
-    background-position: 5rem;
-    width: 70%;
-    text-align: left;
-}
+    .collapsible {
+        background-image: url('../images/icon-arrow-down.svg');
+        background-repeat: no-repeat;
+        background-position: 5rem;
+        width: 70%;
+        text-align: left;
+    }
 
     .content {
-        max-height: 0 ;
-        overflow: hidden;
         padding: 5% 10%;
-
     }
 
     .content p {
@@ -179,7 +178,7 @@ body {
     }
 
     .login-registration button:first-child {
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .login-registration button:nth-child(2) {
@@ -234,6 +233,71 @@ body {
     .collapsible-content {
         max-height: 0;
         overflow: hidden;
+        flex-direction: column;
+
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: var(--almostWhite);
+        width: 60%;
+        position: absolute; 
+        margin-left: 45%;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        margin-top: -10%;
+    }
+    
+    .nav-list li {
+        padding: 5% 10% 0 10%;
+    }
+   
+    
+    .collapsible {
+        background-image: url('../images/icon-arrow-down.svg');
+        background-repeat: no-repeat;
+        background-position: 5rem;
+        width: 70%;
+        text-align: left;
+    }
+
+    .content {   
+        padding: 5% ;
+    }
+
+    .content p {
+        padding: 2% 10%;
+    }
+
+
+    button {
+        font-family: 'Epilogue', sans-serif;
+        background-color: var(--almostWhite);
+        color: var(--mediumGray);
+        border: none;
+    }
+
+    .login-registration {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        padding: 0 5% 30%;
+    }
+
+    .login-registration > button {
+        padding: 5%;
+    }
+
+    .login-registration button:first-child {
+        margin-bottom: 10%;
+    }
+
+    .login-registration button:nth-child(2) {
+        border: 1.5px solid var(--mediumGray);
+        border-radius: 10px;
     }
 
     .intro {

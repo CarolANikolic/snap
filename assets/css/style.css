@@ -12,6 +12,7 @@ body {
     font-family: 'Epilogue', sans-serif;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .index-header {
@@ -79,7 +80,6 @@ body {
 
 .index-title {
     font-weight: 700;
-    padding-bottom: 5%;
 }
 
 .index-description {
@@ -195,7 +195,7 @@ body {
     
     .index-title {
         font-weight: 700;
-        padding-bottom: 5%;
+        font-size: 2rem;
     }
     
     .index-description {
@@ -203,6 +203,7 @@ body {
         margin: 0 auto;
         font-size: 0.8rem;
         line-height: 2;
+        padding-top: 5%;
     }
     
     .clients > img {
@@ -310,7 +311,7 @@ body {
     .index-title {
         font-weight: 700;
         padding-bottom: 5%;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .index-description {
@@ -318,6 +319,7 @@ body {
         margin: 0 auto;
         font-size: 1rem;
         line-height: 1.2;
+        padding-top: 5%;
     }
     
     .clients > img {
@@ -332,6 +334,10 @@ body {
 
 /* Small screens, laptops */
 @media(min-width:769px) {
+    body {
+        height: 100vh;
+    }
+
     .index-nav {
         width: 100%;
         box-sizing: border-box;
@@ -426,5 +432,62 @@ body {
     .login-registration > button:nth-child(2) {
         margin-left: 15%;
         border: 1.5px solid var(--mediumGray);
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: top;
+    }
+
+    .intro {
+        width: 100%;
+        text-align: left;
+        margin: 0 10%;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .index-title {
+        font-size: 3rem;
+    }
+
+    .first-title::after {
+        content: '\a';
+        white-space: pre;
+    }
+
+    .index-description {
+        padding-top: 10%;
+        font-size: 1rem;
+        line-height: 1.5;  
+    }
+
+    .index-learn-btn {
+        width: 100%;
+        text-align: left;
+    }
+
+    .index-learn-btn > button {
+        background-color: var(--almostWhite);
+        border: 1px solid var(--mediumGray);
+        color: var(--almostBlack);
+        margin-top: 15%;
+    }
+
+    .clients {
+        align-content: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    picture {
+        margin: 0 auto;
+    } 
+
+    picture > img {
+        width: 60%;   
     }
 }

@@ -339,7 +339,11 @@ body {
 
     .logo-menu {
         display: absolute;
-        padding: 4%;
+        padding: 3%;
+    }
+
+    .logo {
+        padding-right: 5%;
     }
 
     .menu-btn {
@@ -366,7 +370,7 @@ body {
 
     .nav-buttons > li:nth-child(2) {
         margin-left: 5%;
-        width: 120px;
+        width: 150px;
     }
 
     .nav-list-btn {

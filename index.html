@@ -27,35 +27,43 @@
 
             <div class="collapsible-content">
                 <ul class="nav-list">
-                
-                    <li><button type="button" class="collapsible">Features</button></li>
-                    <div class="content">
+                    
+                    <div class="nav-buttons">
+                        <li><button type="button" class="collapsible nav-list-btn">Features</button></li>
+                        <li><button type="button" class="collapsible nav-list-btn">Company</button></li>
+                    </div>
+
+                    <!-- Beggining of the all screens collapsible-content -->
+                    <div class="content content-features">
                         <p class="todo">Todo List</p>
                         <p class="calendar">Calendar</p>
                         <p class="reminders">Reminders</p>
                         <p class="planning">Planning</p>
                     </div>
-
-                    <li><button type="button" class="collapsible">Company</button></li>
-                    <div class="content">
+                    
+                    <div class="content content-company">
                         <p>History</p>
                         <p>Our Team</p>
                         <p>Blog</p>
                     </div>
-
-                    <li>Careers</li>
-                    <li>About</li>
-                
+                    <!-- Ending of the all screens collapsible-content -->
+        
+                    <div class="careers-about">
+                        <li><button type="button" class="nav-list-btn">Careers</button></li>
+                        <li><button type="button" class="nav-list-btn">About</button></li>
+                     </div>
+                    
         
                     <div class="login-registration">
-                        <button>Login</button>
-                        <button>Register</button>
+                        <button class="nav-list-btn">Login</button>
+                        <button class="nav-list-btn">Register</button>
                     </div>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- End of header content -->
+
 
     <!-- Main contents -->
     <main class="main-content">
@@ -79,6 +87,7 @@
     </main>
     <!-- End of the main content -->
 
+    
     <!-- Clients section -->
     <section class="clients">
 
@@ -91,5 +100,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-

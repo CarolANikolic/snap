@@ -215,7 +215,7 @@ body {
 }
 
 /* iPads, Tablets */
-@media (min-width: 481px) and (max-width: 760px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .logo {
         padding: 5%;
         width: 20%;
@@ -327,5 +327,100 @@ body {
     
     picture > img {
         width: 100%;
+    }
+}
+
+/* Small screens, laptops */
+@media(min-width:769px) {
+    .index-nav {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo-menu {
+        display: absolute;
+        padding: 4%;
+    }
+
+    .menu-btn {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    } 
+
+    .collapsible-content {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+    }
+
+    .nav-list {
+        display: flex;
+        box-sizing: border-box;
+        align-items: baseline;
+    }
+
+    .nav-buttons {
+        display: flex;
+    }
+
+    .nav-buttons > li:nth-child(2) {
+        margin-left: 5%;
+        width: 120px;
+    }
+
+    .nav-list-btn {
+        background-color: var(--almostWhite);
+        border: none;
+        font-family: 'Epilogue', sans-serif;
+        color: var(--mediumGray);
+        height:40px;
+    }
+
+    .collapsible {
+        background-image: url('../images/icon-arrow-down.svg');
+        background-position: 5rem;
+        background-repeat: no-repeat;   
+        width: 120px;
+        text-align: left;
+    }
+
+    .careers-about > li {
+        background-color: var(--almostWhite);
+        border: none;
+        width: 100px;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .careers-about > li:nth-child(2) {
+        margin-left: -8%;
+    }
+
+    .careers-about {
+        display: flex;
+        margin-left: -15%;
+    }
+
+    .careers-about > li:first-child {
+        margin-right: 13%;      
+    }
+
+    .login-registration {
+        display: flex;
+        margin-left: 25%; 
+        align-items: center;
+        box-sizing: border-box;
+        width: 20%;
+    }
+
+    .login-registration > button {
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .login-registration > button:nth-child(2) {
+        margin-left: 15%;
+        border: 1.5px solid var(--mediumGray);
     }
 }

@@ -34,13 +34,15 @@ body {
 .nav-list {
     display: flex;
     width: 100%;
-   
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .collapsible-content {
     display: flex;
     width: 100%;
-    max-height: 0;
     color: var(--mediumGray);
 }
 
@@ -260,6 +262,10 @@ body {
         background-color: var(--almostWhite);  
     }
 
+    .menu-btn:hover {
+        cursor: pointer;
+    }
+
     .collapsible-content {
         max-height: 0;
         overflow: hidden;
@@ -330,11 +336,11 @@ body {
         padding: 5%;
     }
 
-    .login-registration button:first-child {
+    .login-registration > button:first-child {
         margin-bottom: 10%;
     }
 
-    .login-registration button:nth-child(2) {
+    .login-registration > button:nth-child(2) {
         border: 1.5px solid var(--mediumGray);
         border-radius: 10px;
     }

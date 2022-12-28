@@ -34,13 +34,14 @@ body {
 .nav-list {
     display: flex;
     width: 100%;
-    color: var(--mediumGray);
+   
 }
 
 .collapsible-content {
     display: flex;
     width: 100%;
     max-height: 0;
+    color: var(--mediumGray);
 }
 
 .todo {
@@ -67,10 +68,39 @@ body {
     background-repeat: no-repeat;
 }
 
-.content {
+
+.content-features, .content-company { 
     visibility: hidden;
-    max-height: 0 ;
+    max-height: 0;
     overflow: hidden;
+    background-color: var(--almostWhite);
+    width: 150px;
+    padding: 2%;
+    top: 150px;
+    left: -25%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content-features > button {
+    text-align: left;
+    background-color: var(--almostWhite);
+    border: none;
+    color: var(--mediumGray);
+}
+
+.content-company > button {
+    text-align: left;
+    background-color: var(--almostWhite);
+    border: none;
+    color: var(--mediumGray);
+    padding: 3%;
+}
+
+.todo, .calendar, .reminders, .planning {
+    padding: 3% 25%;
+    text-align: left;
 }
 
 .main-content {
@@ -116,13 +146,6 @@ body {
         background-color: var(--almostWhite);
     }
 
-    .collapsible-content {
-        max-height: 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-    }
-
     .nav-list {
         display: flex;
         flex-direction: column;
@@ -136,11 +159,10 @@ body {
         box-sizing: border-box;
     }
     
-    .nav-list li {
+    .nav-list > button {
         padding: 5% 10% 0 10%;
     }
-   
-    
+       
     .collapsible {
         background-image: url('../images/icon-arrow-down.svg');
         background-repeat: no-repeat;
@@ -153,16 +175,23 @@ body {
         padding: 5% 10%;
     }
 
-    .content p {
-        padding: 5% 3% 5% 20%;
-    }
-
-
     button {
         font-family: 'Epilogue', sans-serif;
         background-color: var(--almostWhite);
         color: var(--mediumGray);
         border: none;
+    }
+
+    .careers-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .careers-about > button {
+        text-align: left;
+        padding: 2%;
+        margin-left: 10%;
     }
 
     .login-registration {
@@ -251,10 +280,9 @@ body {
         margin-top: -10%;
     }
     
-    .nav-list li {
+    .nav-list > button {
         padding: 5% 10% 0 10%;
     }
-   
     
     .collapsible {
         background-image: url('../images/icon-arrow-down.svg');
@@ -272,12 +300,22 @@ body {
         padding: 2% 10%;
     }
 
-
     button {
         font-family: 'Epilogue', sans-serif;
         background-color: var(--almostWhite);
         color: var(--mediumGray);
         border: none;
+    }
+
+    .careers-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .careers-about > button {
+        text-align: left;
+        padding: 2% 8%;
     }
 
     .login-registration {
@@ -395,30 +433,20 @@ body {
         text-align: left;
     }
 
-    .careers-about > li {
+    .careers-about {
+        display: flex;
+    }
+
+    .careers-about > button {
         background-color: var(--almostWhite);
         border: none;
         width: 100px;
-        margin-left: 5%;
         text-align: center;
-    }
-
-    .careers-about > li:nth-child(2) {
-        margin-left: -8%;
-    }
-
-    .careers-about {
-        display: flex;
-        margin-left: -15%;
-    }
-
-    .careers-about > li:first-child {
-        margin-right: 13%;      
     }
 
     .login-registration {
         display: flex;
-        margin-left: 25%; 
+        margin-left: 20%; 
         align-items: center;
         box-sizing: border-box;
         width: 20%;
@@ -462,7 +490,8 @@ body {
     .index-description {
         padding-top: 10%;
         font-size: 1rem;
-        line-height: 1.5;  
+        line-height: 1.5;
+        width: 70%;  
     }
 
     .index-learn-btn {
@@ -474,13 +503,17 @@ body {
         background-color: var(--almostWhite);
         border: 1px solid var(--mediumGray);
         color: var(--almostBlack);
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .clients {
         align-content: left;
         display: flex;
         justify-content: space-between;
+    }
+
+    .clients > img {
+        width: 20%;
     }
 
     picture {

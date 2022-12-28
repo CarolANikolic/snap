@@ -14,10 +14,15 @@ const collapseFeaturesContent = () => {
 
     if(featuresContent.style.display == 'block') {
         featuresContent.style.display = 'none';
-        console.log(featuresContent.style.display);
+        
+        // Change arrow icon in Company button 
+        featuresBtn.style.backgroundImage = "url('assets/images/icon-arrow-down.svg')";
+
     } else  {
         featuresContent.style.display = 'block';
 
+        // Change arrow icon in Company button 
+        featuresBtn.style.backgroundImage = "url('assets/images/icon-arrow-up.svg')";
     } 
 }
 
@@ -28,8 +33,13 @@ const collapseCompanyContent = () => {
     if(companyContent.style.display == 'block') {
         companyContent.style.display = 'none';
 
+        // Change arrow icon in Company button 
+        companyBtn.style.backgroundImage = "url('assets/images/icon-arrow-down.svg')";
     } else  {
         companyContent.style.display = 'block';
+
+        // Change arrow icon in Company button 
+        companyBtn.style.backgroundImage = "url('assets/images/icon-arrow-up.svg')";
     }  
 }
 

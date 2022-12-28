@@ -94,7 +94,7 @@ button:hover {
     border: none;
     color: var(--mediumGray);
     padding: 3%;
-    display: block; /*added line*/
+    display: block;
 }
 
 .todo, .calendar, .reminders, .planning {

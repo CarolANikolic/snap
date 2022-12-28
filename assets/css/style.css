@@ -70,17 +70,13 @@ button:hover {
     background-repeat: no-repeat;
 }
 
-
 .content-features, .content-company { 
-    visibility: hidden;
-    max-height: 0;
-    overflow: hidden;
     background-color: var(--almostWhite);
     width: 150px;
     padding: 2%;
     top: 150px;
     left: -25%;
-    display: flex;
+    display: none; 
     flex-direction: column;
     text-align: left;
 }
@@ -98,6 +94,7 @@ button:hover {
     border: none;
     color: var(--mediumGray);
     padding: 3%;
+    display: block; /*added line*/
 }
 
 .todo, .calendar, .reminders, .planning {

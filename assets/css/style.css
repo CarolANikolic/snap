@@ -161,6 +161,12 @@ button:hover {
     .nav-list > button {
         padding: 5% 10% 0 10%;
     }
+
+
+    .collapsible-content {
+        flex-direction: column;
+        display: none;
+    }
        
     .collapsible {
         background-image: url('../images/icon-arrow-down.svg');
@@ -264,10 +270,8 @@ button:hover {
     }
 
     .collapsible-content {
-        max-height: 0;
-        overflow: hidden;
         flex-direction: column;
-
+        display: none;
     }
 
     .nav-list {

@@ -1,16 +1,36 @@
-// Get buttons that contain dropdown
+// Get open menu button for vertical dropdown and all menu vertical section
+const menu = document.getElementById('open-vertical-menu');
+const verticalDropdown = document.getElementById('collapsible-menu');
 
+// Get buttons that contain dropdown
 const featuresBtn = document.getElementById('features');
 const companyBtn = document.getElementById('company');
 
 // Get dropdown content
 const featuresContent = document.getElementById('features-content');
-const companyContent = document.getElementById('company-content')
+const companyContent = document.getElementById('company-content');
+
+
+// Change button background image for vertical menu
+const changeImageVerticalBtn = () => {
+    if(verticalDropdown.style.display == "none") {
+        //Open vertical menu 
+        verticalDropdown.style.display = "block";
+
+        //Change background image to  close icon menu
+        menu.style.backgroundImage = "url('assets/images/icon-close-menu.svg')";
+    } else {
+        //Close vertical menu 
+        verticalDropdown.style.display = "none";
+        
+        //Change background image to open icon menu
+        menu.style.backgroundImage = "url('assets/images/icon-menu.svg')";
+    }    
+}
 
 
 // Control when dropdown content from Feature button will be displayed
 const collapseFeaturesContent = () => {
-    console.log('features');
 
     if(featuresContent.style.display == 'block') {
         featuresContent.style.display = 'none';
@@ -43,6 +63,10 @@ const collapseCompanyContent = () => {
     }  
 }
 
+ // Event listener for Menu button
+ menu.addEventListener('click', () => {
+    changeImageVerticalBtn();
+ });
 
 // Event listener for Feature button
 featuresBtn.addEventListener('click', () => {
@@ -53,4 +77,3 @@ featuresBtn.addEventListener('click', () => {
 companyBtn.addEventListener('click', () => {
     collapseCompanyContent();
  });
-

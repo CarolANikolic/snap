@@ -1,6 +1,6 @@
 # Snap 
 
-<img src="assets/images/screenshots/desktop-view.gif" width=100% alt="snap on desktop view">
+<img src="assets/images/screenshots/desktop-view.png" width=100% alt="snap on desktop view">
 
 Snap is a platform that helps companies to sync their team for remote work. This project is an intro page to test my abilities on HTML, CSS and JS, specifically on creating dropdown navigation menus.
 
